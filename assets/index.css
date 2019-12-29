@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box!important;
+}
+.col-6{
+    float:right;
+    width:50%;
+}
+.form-group{
+    text-align:right;
+    margin-bottom:15px;
+    padding:0 15px;
+}
+
+.form-group label {
+    text-align: right;
+    width: 100%;
+    padding:2px 0;
+    display:block;
+}
+.form-group input[type=text] {
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    padding: 5px 10px;
+    width:100%;
+}
+.btn-group {
+    text-align: left;
+    padding: 0 15px;
+}
+.btn {
+    padding: 5px 20px;
+    background-color: #ccc;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+.avatar {
+    width: 50px;
+}

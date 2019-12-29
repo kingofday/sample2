@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample 2</title>
+    <link href="assets/index.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.default.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.rtl.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.all.min.js"></script>
+</head>
+<body>
+    <div class="k-rtl">
+        <div class="btn-group">
+            <button class="btn" id="add">
+                افزودن
+            </button>
+        </div>
+        <hr />
+        <div id="window">
+            testing
+        </div>
+        <div id="grid"></div>
+
+    </div>
+
+    <script type="text/x-kendo-template" id="form">
+        <div id="details-container">
+            <input id="UserId" type="hidden" value="#= UserId #" />
+            <div class="col-6">
+                <img id="show_img" class="avatar" src="#= Avatar #" alt="avatar" />
+                <div>
+                    <input type="file" id="uploader"/>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label>نام</label>
+                    <input name="FirstName" id="FirstName" class="form-control" type="text" value="#= FirstName #" />
+                </div>
+                <div class="form-group">
+                    <label>نام خانوادگی</label>
+                    <input name="LastName" id="LastName" class="form-control" type="text" value="#= LastName #" />
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn" id="submit" data-mode="#= Mode #">
+                    ثبت
+                </button>
+            </div>
+        </div>
+    </script>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
